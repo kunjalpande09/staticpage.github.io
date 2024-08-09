@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+#home .intro {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#home .intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#home .intro p {
+    margin-bottom: 5px;
+}
+
+#about h2,
+#skills h2,
+#experience h2,
+#projects h2,
+#certifications h2,
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-container,
+.experience-container,
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill,
+.experience,
+.project {
+    width: 30%;
+    background: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill h3,
+.experience h3,
+.project h3 {
+    margin-bottom: 10px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .skills-container,
+    .experience-container,
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill,
+    .experience,
+    .project {
+        width: 80%;
+    }
+}
